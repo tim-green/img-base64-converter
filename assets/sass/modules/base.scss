@@ -47,7 +47,7 @@ h1{
 }
 #upload-trigger{
 	display:block;
-	width: 20%;
+	width: 100%;
   padding: 0.8em 0.2em;
 	@include main-gradient($medium-black, $darker-gray, $black);
 	border-radius:5px;
