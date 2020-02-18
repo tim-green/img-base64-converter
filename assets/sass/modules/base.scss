@@ -8,7 +8,7 @@
 body{
   background:url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
   margin: 0;
-  font: 14px/20px sans-serif;
+  font: 16px/20px sans-serif;
   color: $darker-gray;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -48,16 +48,17 @@ h1{
 #upload-trigger{
 	display:block;
 	width: 100%;
-  padding: 0.8em 0.2em;
+  	padding: 0.8em 0.2em;
 	@include main-gradient($medium-black, $darker-gray, $black);
 	border-radius:5px;
-	font-size:20px;
+	@include fontSize(20px);
 	color:$white;
 	transition:0.25s;
 }
 input#upload-img:hover+#upload-trigger{
-	background:#9ccc65;
+	backgroun:$magenta;
 }
+
 input#upload-img{
 	opacity:0;
 	cursor:pointer;
@@ -88,7 +89,7 @@ input#upload-img{
 }
 #img-details{
 	text-align:left;
-	font-size:12px;
+	@include fontSize(12px);
 	padding-top:10px;
 	max-width:180px;
 	line-height:1.4;
